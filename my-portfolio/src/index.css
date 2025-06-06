@@ -1,0 +1,16 @@
+:root {
+  --colorPrimary: #D9D9D9;
+  --colorSecondary: #000000;
+
+
+  --textPrimary: #000000;
+  --textSecondary: #D9D9D9;
+  
+  --colorSuccess: #81C784;
+  --colorError: #E57373;
+  
+  --fontFamily: 'Jersey 25', sans-serif;
+
+}
+
+
