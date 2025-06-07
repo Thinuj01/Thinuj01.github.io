@@ -18,6 +18,13 @@
     color: var(--colorSecondary);
     transition: transform 0.2s ease-in-out;
 }
+.linkedinContainer a{
+    text-decoration: none;
+    color: var(--colorSecondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .linkedinContainer:hover{
     transform: scale(1.1);
 }

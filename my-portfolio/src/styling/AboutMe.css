@@ -29,8 +29,7 @@
         padding: 0;
     }
     .aboutMeContainer h2 {
-        font-size: 2rem;
-        margin-top: 0.1rem;
+        display: none;
     }
 
     .aboutMeContainer p {

@@ -6,6 +6,8 @@ import "./MainPage.css";
 import FollowMe from "../components/FollowMe";
 import IntroComp from "../components/IntroComp";
 import AboutMe from "../components/AboutMe";
+import MyProjectsSection from "../components/MyProjectsSection";
+import ContactMe from "../components/ContactMe";
 
 const MainPage = () => {
   const [content, setContent] = useState("Home");
@@ -21,9 +23,9 @@ const MainPage = () => {
       case "About me":
         return <AboutMe />;
       case "My projects":
-        return <h1>Our Projects</h1>;
+        return <MyProjectsSection />;
       case "Contact me":
-        return <h1>Contact Us</h1>;
+        return <ContactMe />;
       default:
         return <h1>Page Not Found</h1>;
     }

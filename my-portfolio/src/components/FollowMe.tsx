@@ -6,10 +6,22 @@ const FollowMe = () => {
   return (
     <div className="followMeContainer">
       <div className="linkedinContainer">
-        <FaLinkedinIn />
+        <a
+          href="https://www.linkedin.com/in/thinuja-hettiarachchi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedinIn />
+        </a>
       </div>
       <div className="linkedinContainer">
-        <FaGithub />
+        <a
+          href="https://github.com/Thinuj01"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
       </div>
     </div>
   );
