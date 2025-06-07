@@ -1,0 +1,43 @@
+.followMeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedinContainer{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--colorPrimary);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--colorSecondary);
+    transition: transform 0.2s ease-in-out;
+}
+.linkedinContainer a{
+    text-decoration: none;
+    color: var(--colorSecondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkedinContainer:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .followMeContainer{
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    .linkedinContainer{
+        height: 3rem;
+        width: 3rem;
+        font-size: 2rem;
+    }
+
+}

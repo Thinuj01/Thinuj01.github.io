@@ -1,0 +1,48 @@
+.aboutMeContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+.aboutMeContainer h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.aboutMeContainer p {
+    width: 80%;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+.aboutMeParagraph{
+    display: flex;
+}
+.aboutMeParagraphMobile{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .aboutMeContainer{
+        padding: 0;
+    }
+    .aboutMeContainer h2 {
+        display: none;
+    }
+
+    .aboutMeContainer p {
+        width: 80%;
+        font-size: 1rem;
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+    .aboutMeParagraph{
+        display: none;
+    }
+    .aboutMeParagraphMobile{
+        display: flex;;
+    }
+}
