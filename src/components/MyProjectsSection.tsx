@@ -33,6 +33,12 @@ const MyProjectsSection: React.FC = () => {
         "Expense Tracker is a Flutter-based app that helps users monitor income and expenses in real time, with features like category-based sorting, advanced filtering, and visual financial analytics. Designed for simplicity, it promotes better money management through an intuitive interface and insightful spending trends",
         technologies: ["flutter", "hive"],
     },
+    {
+      title: "Portfolio",
+      description:
+        "A modern developer portfolio built with React and Vite, showcasing my technical skills and professional projects. Features responsive design, smooth animations, and a contact form integrated with EmailJS. Demonstrates clean code practices and attention to UX/UI details.",
+        technologies: ["react"],
+    },
   ];
 
   const [centerIndex, setCenterIndex] = useState<number>(1);
