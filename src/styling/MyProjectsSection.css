@@ -102,12 +102,12 @@
     }
   
     .projectsContainer {
-        height: 45vh;
+        height: 48vh;
         gap: 0px;
         position: relative;
         width: 100%;
         overflow: hidden;
-        padding: 0 30px; /* Add padding on mobile */
+        padding: 0 30px;
         box-sizing: border-box;
       }
   
