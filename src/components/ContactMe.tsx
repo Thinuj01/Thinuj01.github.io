@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import '../styling/ContactMe.css';
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import "../styling/ContactMe.css";
+import { motion } from "framer-motion";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -29,11 +32,11 @@ const ContactMe = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
-      alert('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error('Email sending failed:', error);
-      alert('Failed to send message. Please try again.');
+      console.error("Email sending failed:", error);
+      alert("Failed to send message. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -44,12 +47,32 @@ const ContactMe = () => {
     sendEmail();
   };
 
+  // Framer Motion variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="contactMeContainer">
-      <h2>Contact Me</h2>
-      <div className="contactForm">
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        Contact Me
+      </motion.h2>
+
+      <motion.div
+        className="contactForm"
+        initial="hidden"
+        whileInView="visible"
+        transition={{ staggerChildren: 0.15 }}
+        viewport={{ once: true }}
+      >
         <form onSubmit={handleSubmit}>
-          <div className="formGroup">
+          <motion.div className="formGroup" variants={fadeInUp}>
             <input
               type="text"
               name="name"
@@ -58,8 +81,9 @@ const ContactMe = () => {
               onChange={handleChange}
               required
             />
-          </div>
-          <div className="formGroup">
+          </motion.div>
+
+          <motion.div className="formGroup" variants={fadeInUp}>
             <input
               type="email"
               name="email"
@@ -68,8 +92,9 @@ const ContactMe = () => {
               onChange={handleChange}
               required
             />
-          </div>
-          <div className="formGroup">
+          </motion.div>
+
+          <motion.div className="formGroup" variants={fadeInUp}>
             <textarea
               name="message"
               placeholder="Enter your message"
@@ -78,14 +103,26 @@ const ContactMe = () => {
               onChange={handleChange}
               required
             ></textarea>
-          </div>
-          <div className="sendMailBtn">
-            <button type="submit" disabled={loading}>
-              {loading ? <span>Sending<span className="spinner" /></span> : 'Send'}
-            </button>
-          </div>
+          </motion.div>
+
+          <motion.div className="sendMailBtn" variants={fadeInUp}>
+            <motion.button
+              type="submit"
+              disabled={loading}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {loading ? (
+                <span>
+                  Sending <span className="spinner" />
+                </span>
+              ) : (
+                "Send"
+              )}
+            </motion.button>
+          </motion.div>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

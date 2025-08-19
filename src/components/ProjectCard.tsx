@@ -6,6 +6,9 @@ import { SiPhp } from "react-icons/si";
 import { FaFlutter } from "react-icons/fa6";
 import { SiApachehive } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 type ProjectCardProps = {
   title: string;
@@ -37,6 +40,15 @@ const ProjectCard = ({
         break;
       case "hive":
         return <SiApachehive />;
+        break;
+      case "nextjs":
+        return <RiNextjsFill />;
+        break;
+      case "typescript":
+        return <BiLogoTypescript />;
+        break;
+      case "tailwindcss":
+        return <RiTailwindCssFill />;
         break;
     }
   };

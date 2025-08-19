@@ -39,6 +39,13 @@ const MyProjectsSection: React.FC = () => {
         "A modern developer portfolio built with React and Vite, showcasing my technical skills and professional projects. Features responsive design, smooth animations, and a contact form integrated with EmailJS. Demonstrates clean code practices and attention to UX/UI details.",
         technologies: ["react"],
     },
+    {
+      title: "Real-Time Chat with Emotion Analysis",
+      description:
+        "A real-time chat website built with React and WebSockets, featuring live messaging and emotion analysis using Hugging Face's j-hartmann/emotion-english-distilroberta-base model. Displays dynamic emotion scores with progress bars, providing interactive insights into conversations.",
+      technologies: ["nextjs", "typescript", "tailwindcss"],
+    }
+    
   ];
 
   const [centerIndex, setCenterIndex] = useState<number>(1);
