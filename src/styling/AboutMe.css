@@ -24,6 +24,25 @@
 .aboutMeParagraphMobile{
     display: none;
 }
+@media screen and (max-width: 1280px) {
+    .aboutMeContainer h2 {
+        font-size: 3rem;
+        margin-top: 0.5rem;
+    }
+    .aboutMeContainer p {
+        width: 80%;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+    .aboutMeParagraph{
+        display: flex;
+    }
+    .aboutMeParagraphMobile{
+        display: none;
+    }
+}
 @media screen and (max-width: 768px) {
     .aboutMeContainer{
         padding: 0;
@@ -31,7 +50,7 @@
     .aboutMeContainer h2 {
         display: none;
     }
-
+    
     .aboutMeContainer p {
         width: 80%;
         font-size: 1rem;

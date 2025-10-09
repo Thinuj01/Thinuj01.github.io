@@ -62,7 +62,25 @@
 .gitBtn:hover{
     color: rgb(255, 153, 0);
 }
+@media (max-width: 1280px) {
+  .projectCardInner {
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 1rem;
+  }
+  .projectCardInner h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
 
+  .projectCardInner p {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .gitProject{
+    margin-top: 0.5rem;
+  }
+}
 @media (max-width: 768px) {
   .projectCardInner {
     font-size: 1rem;
