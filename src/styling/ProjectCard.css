@@ -62,7 +62,7 @@
 .gitBtn:hover{
     color: rgb(255, 153, 0);
 }
-@media (max-width: 1280px) {
+@media (max-width: 1400px) {
   .projectCardInner {
     font-size: 1.2rem;
     border-radius: 20px;
