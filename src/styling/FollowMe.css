@@ -28,7 +28,19 @@
 .linkedinContainer:hover{
     transform: scale(1.1);
 }
+@media screen and (max-width: 1280px) {
+    .followMeContainer{
+        flex-direction: column;
+        gap: 0.05rem;
+    }
+    .linkedinContainer{
+        margin-top: 0.5rem;
+        height: 4rem;
+        width: 4rem;
+        font-size: 2.2rem;
+    }
 
+}
 @media screen and (max-width: 768px) {
     .followMeContainer{
         flex-direction: row;

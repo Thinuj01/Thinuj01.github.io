@@ -31,6 +31,13 @@
 .textNameHide{
     display: flex;
 }
+@media screen and (max-width: 1280px) {
+    .NavLinkCompContanier{
+        height: 3rem;
+        font-size: 1.3rem;
+        
+    }
+}
 @media screen and (max-width: 768px) {
     .NavLinkCompContanier{
         height: 3rem;
