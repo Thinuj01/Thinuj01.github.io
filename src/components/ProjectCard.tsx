@@ -9,6 +9,8 @@ import { FaGithub } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { DiPostgresql } from "react-icons/di";
+import { AiOutlineDotNet } from "react-icons/ai";
 
 type ProjectCardProps = {
   title: string;
@@ -49,6 +51,12 @@ const ProjectCard = ({
         break;
       case "tailwindcss":
         return <RiTailwindCssFill />;
+        break;
+      case ".NET":
+        return <AiOutlineDotNet />;
+        break;
+      case "postgreSQL":
+        return <DiPostgresql />;
         break;
     }
   };

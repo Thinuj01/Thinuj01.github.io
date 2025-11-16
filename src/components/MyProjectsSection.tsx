@@ -44,8 +44,13 @@ const MyProjectsSection: React.FC = () => {
       description:
         "A real-time chat website built with React and WebSockets, featuring live messaging and emotion analysis using Hugging Face's j-hartmann/emotion-english-distilroberta-base model. Displays dynamic emotion scores with progress bars, providing interactive insights into conversations.",
       technologies: ["nextjs", "typescript", "tailwindcss"],
+    },
+    {
+     title: "Pinklet - Interactive Gift Customization Platform",
+      description:
+        "A full-stack platform for customized gifts and 3D cake design. It features a real-time 3D Cake Customizer and Gift Builder with live pricing, and includes an integrated Vendor Marketplace and Budget Recommendation Engine.",
+      technologies: ["react", ".NET", "postgreSQL"],
     }
-    
   ];
 
   const [centerIndex, setCenterIndex] = useState<number>(1);
